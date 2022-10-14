@@ -1,3 +1,7 @@
+using ServiceDescriptor.Interfaces;
+using ServiceDescriptor.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +11,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Definindo ServiceTwo para implementação da interface
+var descriptor = new Microsoft.Extensions.DependencyInjection.ServiceDescriptor(
+    typeof(IService),
+    typeof(ServiceTwo),
+    ServiceLifetime.Transient);
+
+builder.Services.Add(descriptor);
+    
 
 var app = builder.Build();
 

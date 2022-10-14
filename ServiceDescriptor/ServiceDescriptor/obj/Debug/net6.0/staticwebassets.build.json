@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RRqZ30P1NLkRGsMmVSoQpBIvT6pY6xuSVMhtNZD1vZA=",
+  "Source": "ServiceDescriptor",
+  "BasePath": "_content/ServiceDescriptor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
