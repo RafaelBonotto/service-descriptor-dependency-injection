@@ -33,5 +33,9 @@ namespace ServiceDescriptor.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("service")]
+        public string GetService()
+            => _service.GetService();
     }
 }
